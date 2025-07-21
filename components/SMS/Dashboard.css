@@ -1,0 +1,655 @@
+/* Add this CSS to your Dashboard.css file or at the top of your CSS file */
+
+/* Import Roboto font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Apply Roboto font to all elements */
+* {
+  font-family: 'Roboto' !important;
+}
+
+/* Specific overrides for common elements */
+body, html {
+  font-family: 'Roboto' !important;
+}
+
+/* Override for all text elements */
+h1, h2, h3, h4, h5, h6, p, span, div, a, button, input, select, textarea, label, td, th {
+  font-family: 'Roboto' !important;
+}
+
+/* Override for table elements */
+table, table * {
+  font-family: 'Roboto' !important;
+}
+
+/* Override for form elements */
+.input-field, .product-select, .file-input {
+  font-family: 'Roboto',!important;
+}
+
+/* Override for navigation and buttons */
+.nav-item, .submit-button, .back-button, .query-btn {
+  font-family: 'Roboto' !important;
+}
+
+/* Override for any remaining elements */
+.dashboard-container, .dashboard-container * {
+  font-family: 'Roboto' !important;
+}
+.head * {
+  font-family: 'Roboto' !important;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: __Roboto_4db51b, __Roboto_Fallback_4db51b;
+  font-style: normal;
+}
+
+body {
+  font-family: __Roboto_4db51b, __Roboto_Fallback_4db51b;
+  font-style: normal;
+  background-color: #f5f5f5;
+}
+
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 200px;
+  /* background-color: #e8e8e8; */
+  background-color:rgb(255, 230, 255);
+  padding: 20px 0;
+  border-right: 1px solid #ddd;
+}
+
+.login-section {
+  padding: 0 20px; 
+  margin-bottom: 30px;
+}
+
+.login-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  /* background-color: #4285f4; */
+  background-color: rgb(96, 57, 210);
+  color: white;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.login-icon {
+  font-size: 16px;
+}
+
+.nav-section {
+  margin-bottom: 40px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  font-size: 14px;
+  /* color: #666; */
+  color: #374151;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.nav-item:hover {
+  background-color: #ddd;
+}
+
+.nav-item.active {
+  /* background-color: #4285f4; */
+  background-color: rgb(96, 57, 210);
+  color: white;
+}
+
+.nav-icon {
+  font-size: 16px;
+}
+
+.others-section {
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.section-title {
+  padding: 0 20px 10px;
+  font-size: 12px;
+  color:#6B7280;
+  font-weight: bold;
+}
+
+/* Main Content Styles */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: white;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  color: #6039D2;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Campaign Name Link Styles */
+.campaign-name-link {
+  color: #6039D2;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.campaign-name-link:hover {
+  color: #3367d6;
+  text-decoration: none;
+}
+
+/* Back Button Styles */
+.back-button-container {
+  margin-bottom: 20px;
+}
+
+.back-button {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.back-button:hover {
+  background-color: #e8e8e8;
+}
+
+/* Campaign Details Styles */
+.campaign-details-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.campaign-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: rgb(96, 57, 210);
+  border-radius: 12px;
+  color: white;
+}
+
+.campaign-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.campaign-title h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.target-icon {
+  font-size: 28px;
+}
+/* start date/end date */
+.campaign-date-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.date-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.date-icon {
+  font-size: 16px;
+}
+
+.date-separator {
+  width: 2px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.stats-container {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+.stat-icon.large-icon {
+  font-size: 32px;
+  color: #4285f4;
+}
+
+.stat-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.table-section {
+  margin-bottom: 30px;
+}
+
+.table-section .campaign-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table-section .campaign-table td {
+  padding: 15px;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 14px;
+}
+
+.table-section .campaign-table .table-header {
+  /* background-color: #f8f9fa; */
+  background-color:rgb(255, 230, 255);
+  font-weight: 600;
+  color: #333;
+  width: 200px;
+}
+
+.table-section .campaign-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.sms-table {
+  margin-top: 20px;
+}
+.sms-delivery{
+  text-indent: 10px; 
+}
+
+.sms-table thead {
+  background-color: #4285f4;
+  color: white;
+}
+
+.sms-table th {
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.sms-table td {
+  padding: 12px 15px;
+  font-size: 13px;
+}
+
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status-badge.delivered {
+  /* background-color: #e8f5e8; */
+  color: #0c0c0c;
+}
+
+.status-badge.not-delivered {
+  /* background-color: #ffebee; */
+  color: #0c0c0c;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+/* sms-details-table */
+.campaign-sms-details{
+  background-color: #f9f9f9;
+}
+
+/* Filters Section */
+.filters-section {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.filter-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.filter-row:last-child {
+  margin-bottom: 0;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+}
+
+.filter-group label {
+  font-size: 13px;
+  color: #333;
+  font-weight: 500;
+}
+
+.filter-group input {
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 13px;
+  background-color: white;
+}
+
+.filter-group input:focus {
+  outline: none;
+  border-color: #4285f4;
+}
+
+/* Date Input Container */
+.date-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.date-input-container input[type="date"] {
+  padding: 8px 35px 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 13px;
+  background-color: white;
+  width: 100%;
+}
+
+.date-input-container input[type="date"]:focus {
+  outline: none;
+  border-color: #4285f4;
+}
+
+.calendar-icon {
+  position: absolute;
+  right: 10px;
+  font-size: 14px;
+  pointer-events: none;
+  color: #666;
+}
+
+.query-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.query-btn {
+  /* background-color: #4285f4; */
+  background-color: rgb(96, 57, 210);
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.query-btn:hover {
+  background-color: #3367d6;
+}
+
+/* Table Styles */
+.table-container {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.campaign-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.campaign-table th {
+  /* background-color: #f5f5f5; */
+  background-color:rgb(255, 230, 255);
+  padding: 12px 8px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  /* color: #333; */
+  color: #2563EB;
+  border-bottom: 1px solid #e0e0e0;
+  text-transform: uppercase;
+}
+
+.campaign-table td {
+  padding: 12px 8px;
+  font-size: 13px;
+  color: #333;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.campaign-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.campaign-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Status Styles */
+.status {
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status.completed {
+  background-color: #e8f5e8;
+  color: #2e7d32;
+}
+
+.status.processing {
+  background-color: #fff3e0;
+  color: #f57c00;
+}
+
+.status.stop {
+  background-color: #ffebee;
+  color: #d32f2f;
+}
+
+/* Campaign Upload Styles */
+.campaign-upload-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.2s;
+  background-color: rgb(255, 230, 255);
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #4285f4;
+}
+
+.upload-area {
+  border: 2px dashed #ddd;
+  border-radius: 8px;
+  padding: 40px 20px;
+  text-align: center;
+  transition: all 0.2s;
+  background-color: #fafafa;
+  margin-bottom: 20px;
+  height: 300px;
+}
+
+.upload-area.dragging {
+  border-color: #4285f4;
+  background-color: #f0f7ff;
+}
+
+.upload-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.upload-icon {
+  font-size: 48px;
+  color: #666; 
+  margin-bottom: 10px;
+}
+
+.file-input {
+  display: none;
+}
+
+.upload-link {
+  color: #6039D2;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.upload-link:hover {
+  color: #3367d6;
+}
+
+.file-info {
+  color: #666;
+  font-size: 12px;
+  margin: 0;
+}
+
+.selected-file {
+  /* color: #4285f4; */
+  color:#6039D2;
+  font-weight: 500;
+  margin: 10px 0 0 0;
+}
+
+.submit-container {
+  text-align: center;
+}
+
+.submit-button {
+  background-color:rgb(96, 57, 210);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-button:hover {
+  background-color: #3367d6;
+}
+/* Product Name Style */
+.field-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+.product-select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: border-color 0.2s;
+  background-color: rgb(255, 230, 255);
+}
+
+.product-select:focus {
+  outline: none;
+  border-color: #4285f4;
+}
