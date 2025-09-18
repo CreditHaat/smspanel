@@ -448,10 +448,13 @@ const CampaignUpload = () => {
             className="product-select"
           >
             <option value="">Select a product</option>
-            <option value="HeroFINCORP">HeroFINCORP</option>
+            <option value="AryseFin">AryseFin</option>
             <option value="TrustPaisa">TrustPaisa</option>
             <option value="PoonawallaFincorp">PoonawallaFincorp</option>
              <option value="RamFincorp">RamFincorp</option>
+             <option value="HeroFINCORP">HeroFINCORP</option>
+             <option value="Kredito24">Kredito24</option>
+             
 
           </select>
         </div>
